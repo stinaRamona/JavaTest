@@ -18,5 +18,21 @@ public class App {
         int number3 = Utils.addera(number1, number2); 
 
         System.out.println(number1 + "+" + number2 + "=" + number3); //lär finnas snyggare sätt att skriva på
+
+        //test för item och storage
+        Storage storage = new Storage(); 
+
+        //skapar nytt item med Item-klassen som mall 
+        Item item1 = new Item("Tavla", 1000, 2); 
+        Item item2 = new Item("Bok", 300, 10); 
+
+        //lägger till ett item med addItem-metoden från storage-klassen
+        storage.addItem(item1); 
+        storage.addItem(item2); 
+
+        //Skriver ut de tillagda itemsarna med metod displayStorage från storage-klassen  
+        storage.displayStorage(); 
+
+        //fiffigt! 
     }
 }
